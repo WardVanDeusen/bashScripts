@@ -1,0 +1,6 @@
+#!/bin/bash
+yum groupinstall "X Window System"&&
+yum groupinstall GNOME Graphical Administration Tools&&
+ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target&&
+reboot
+
